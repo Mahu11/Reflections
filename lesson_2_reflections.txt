@@ -1,0 +1,5 @@
+Lesson 2:
+To create a repository, Navigate to dir with files:
+git init
+To add a file to the staging area:
+git add <file name>

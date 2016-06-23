@@ -1,0 +1,52 @@
+FC (file compare ) is poor - use Ultra Compare.
+VC is great to restore back to an old (working) version.
+Commits are user created check points.  Are the basic building blocks of GIT.
+git log  - Displays all commits (navigate to a directory first)
+Make one commit per logical change e.g. one commit for each bug fix.
+Its a judgement call when to commit.
+Commits with multiple files e.g. HTML+CSS are organised as a repository. 
+   Very useful in programming - less so in word processing. 
+   Using manifest.xml in Android studio?
+git log --stat    - Gives some stats on how many changes between commits
+git diff commitId1 commitId2  (find differences between commits).
+git clone "http..."   - makes a copy of a repository so you can copy between computers.
+git config --global color.ui auto   To add auto coloring of diff reports.
+Ctrl/Shift+insert (or RMB + paste) to paste into Git Bash.
+Octopus is a strategy Git uses to combine many different versions of code together. 
+   This message can appear if you try to use this strategy in an inappropriate situation.
+HEAD is what Git calls the commit you are currently on. 
+   You can “detach” the HEAD by switching to a previous commit,
+git checkout - restores an older version 
+   or restores all files in a repository at the time of the commit.
+git checkout -b new_branch_name    for detached HEAD state.  Ensures a restore doesnt 
+   overwrite existing (uncomitted) changes.  Then to check, index.html --> open with... 
+   
+Setting Up environment (CTL = Click Top Left):
+Background color: ctl --> options --> looks --> Background (foreground button is text color)  
+git config --global core.editor "notepad++.exe -n -w"    - sets up Notepad++ as default editor
+   -n is new window
+   -w is wait till window closes till continuing
+   
+Git will be essential for all software version control - Can I use Links for Sas & Blaise & Android???
+
+Exercises at end of Less on 1:
+Behavior of git clone:
+1-If someone else gives you the location of their directory or repository, you can copy or clone it to your own computer.
+   This is true for both copying a directory and cloning a repository.
+   As you saw in the previous lesson, if you have a URL to a repository, you can copy it to your computer using git clone.
+   For copying a directory it is possible to copy a directory from one computer to another using the command scp, 
+   which stands for "secure copy". The name was chosen because the scp command lets you securely copy a directory 
+   from one computer to another. 
+
+2-The history of changes to the directory or repository is copied.
+   This is true for cloning a repository, but not for copying a directory. The main reason to use git clone rather 
+   than copying the directory is because git clone will also copy the commit history of the repository. However, 
+   copying can be done on any directory, whereas git clone only works on a Git repository. 
+
+3-If you make changes to the copied directory or cloned repository, the original will not change.
+   This is true for both copying a directory and cloning a repository. In both cases, you're making a copy that you 
+   can alter without changing the original. 
+
+4 - The state of every file in the directory or repository is copied.
+   This is true for both copying a directory and cloning a repository. In both cases, all the files are copied.   
+   
